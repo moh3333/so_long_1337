@@ -6,7 +6,7 @@
 /*   By: mthamir <mthamir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/06 18:22:56 by mthamir           #+#    #+#             */
-/*   Updated: 2024/06/18 22:19:52 by mthamir          ###   ########.fr       */
+/*   Updated: 2024/06/19 17:18:34 by mthamir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@
 # include <limits.h>
 # include <stdarg.h>
 # include <fcntl.h>
-# include <stdio.h>
 # include <errno.h>
 # include <string.h>
 # include <mlx.h>
@@ -82,12 +81,14 @@ void	check_for_screen_resolution(t_game *game);
 void	go_pars(t_game	*game);
 int		get_num_of_lines(t_game *game);
 void	check_map_extention(char *filename);
+/* for get_next_line */
 size_t	ft_strlen(const char *s);
 char	*ft_strdup(char *s);
 char	*ft_copy(char *s1, char *s2, int i);
 char	*ft_strjoin(char	*s1, char	*s2);
 int		check_for_nl(char	**buff);
 char	*get_next_line(int fd);
+/* for ft_printf */
 int		ft_putchar(char c);
 int		ft_putstr(char *str);
 int		ft_putint(int nbr);
